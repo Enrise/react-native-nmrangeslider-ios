@@ -16,7 +16,7 @@ npm install --save react-native-nmrangeslider-ios
 ```
 
 Then drag and drop the "DefaultTheme7" folder from `node_modules/react-native-nmrangeslider-ios/` to your
-X Code Resource folder. Select "copy files if necessary" and link them to your project.
+XCode Resources folder. Select "copy files if necessary" and link them to your project.
 
 # Usage example
 
