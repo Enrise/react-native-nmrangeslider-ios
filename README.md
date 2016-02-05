@@ -15,8 +15,12 @@ slider. Because NMRangeSlider is implemented as a native module there is no lag 
 npm install --save react-native-nmrangeslider-ios
 ```
 
+Follow the [procedure to link the library in XCode](https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking) 
+or run `rnpm link react-native-nmrangeslider-ios` using [rnpm](https://github.com/rnpm/rnpm).
+
+
 Then drag and drop the "DefaultTheme7" folder from `node_modules/react-native-nmrangeslider-ios/` to your
-XCode Resources folder. Select "copy files if necessary" and link them to your project.
+XCode Resources folder. Select "copy files if necessary" and link them to your project. 
 
 # Usage example
 
