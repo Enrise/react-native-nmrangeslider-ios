@@ -6,6 +6,9 @@ React Native Slider component with two markers based on [NMRangeSlider](https://
 works in javascript only which creates a noticeable lag when moving a 
 slider. Because NMRangeSlider is implemented as a native module there is no lag in this version.
 
+![slider-example](https://cloud.githubusercontent.com/assets/133832/12846584/a28dc36e-cc0d-11e5-9a70-dcc4445e72b6.gif)
+
+
 # Installation
 
 ```
