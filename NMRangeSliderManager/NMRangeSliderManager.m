@@ -7,7 +7,7 @@
 
 @end
 
-@implementation NMRangeSliderManager 
+@implementation NMRangeSliderManager
 
 RCT_EXPORT_MODULE();
 
@@ -18,8 +18,11 @@ RCT_EXPORT_VIEW_PROPERTY(stepValue, float);
 RCT_EXPORT_VIEW_PROPERTY(stepValueContinuously, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(continuous, BOOL);
 RCT_EXPORT_VIEW_PROPERTY(lowerValue, float);
+RCT_EXPORT_VIEW_PROPERTY(lowerMaximumValue, float);
 RCT_EXPORT_VIEW_PROPERTY(upperValue, float);
+RCT_EXPORT_VIEW_PROPERTY(upperMinimumValue, float);
 RCT_EXPORT_VIEW_PROPERTY(lowerCenter, CGPoint);
+RCT_EXPORT_VIEW_PROPERTY(upperCenter, CGPoint);
 //RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock)
 
 - (UIView *)view
@@ -49,13 +52,13 @@ RCT_EXPORT_VIEW_PROPERTY(lowerCenter, CGPoint);
 
 - (void) continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event;
 {
-  
+
   [self sendValues:@"topChange" touch:touch];
 }
 
 - (void) endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event;
 {
- 
+
   [self sendValues:@"topChange" touch:touch];
 }
 

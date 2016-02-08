@@ -11,8 +11,11 @@ const NMRangeSliderIOS = React.createClass({
     stepValueContinuously: React.PropTypes.bool,
     continuous: React.PropTypes.bool,
     lowerValue: React.PropTypes.number,
+    lowerMaximumValue: React.PropTypes.number,
     upperValue: React.PropTypes.number,
+    upperMinimumValue: React.PropTypes.number,
     lowerCenter: React.PropTypes.object, // CGPoint?
+    upperCenter: React.PropTypes.object, // CGPoint?
     onChange: React.PropTypes.func,
   },
 
