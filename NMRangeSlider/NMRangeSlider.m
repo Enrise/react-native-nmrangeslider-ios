@@ -230,6 +230,13 @@ NSUInteger DeviceSystemMajorVersion() {
     [self setNeedsLayout];
 }
 
+- (void)setEnabled:(BOOL)enabled
+{
+    [super setEnabled:enabled];
+    
+    self.alpha = enabled ? 1.0 : 0.5;
+}
+
 //ON-Demand images. If the images are not set, then the default values are loaded.
 
 - (UIImage *)imageFromBundle:(NSString*)imageName {
