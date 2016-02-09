@@ -23,7 +23,14 @@ RCT_EXPORT_VIEW_PROPERTY(upperValue, float);
 RCT_EXPORT_VIEW_PROPERTY(upperMinimumValue, float);
 RCT_EXPORT_VIEW_PROPERTY(lowerCenter, CGPoint);
 RCT_EXPORT_VIEW_PROPERTY(upperCenter, CGPoint);
-//RCT_EXPORT_VIEW_PROPERTY(onChange, RCTBubblingEventBlock)
+RCT_CUSTOM_VIEW_PROPERTY(disabled, BOOL, NMRangeSlider)
+{
+  if (json) {
+    view.setEnabled = !([RCTConvert BOOL:json]);
+  } else {
+    view.enabled = defaultView.enabled;
+  }
+}
 
 - (UIView *)view
 {
