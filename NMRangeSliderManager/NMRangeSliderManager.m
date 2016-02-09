@@ -26,9 +26,9 @@ RCT_EXPORT_VIEW_PROPERTY(upperCenter, CGPoint);
 RCT_CUSTOM_VIEW_PROPERTY(disabled, BOOL, NMRangeSlider)
 {
   if (json) {
-    view.setEnabled = !([RCTConvert BOOL:json]);
+    [view setEnabled:!([RCTConvert BOOL:json])];
   } else {
-    view.enabled = defaultView.enabled;
+    [view setEnabled:defaultView.enabled];
   }
 }
 
