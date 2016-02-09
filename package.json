@@ -1,6 +1,6 @@
 {
   "name": "react-native-nmrangeslider-ios",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "React Native Slider component with two markers based on https://github.com/mvelikov/NMRangeSlider.",
   "main": "NMRangeSliderIOS.js",
   "bin": {
