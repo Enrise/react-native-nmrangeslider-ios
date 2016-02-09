@@ -6,17 +6,26 @@ const NMRangeSliderIOS = React.createClass({
   propTypes: {
     minimumValue: React.PropTypes.number,
     maximumValue: React.PropTypes.number,
-    minimumRange: React.PropTypes.number,
-    stepValue: React.PropTypes.number,
-    stepValueContinuously: React.PropTypes.bool,
-    continuous: React.PropTypes.bool,
     lowerValue: React.PropTypes.number,
     lowerMaximumValue: React.PropTypes.number,
     upperValue: React.PropTypes.number,
     upperMinimumValue: React.PropTypes.number,
+    minimumRange: React.PropTypes.number,
+    stepValue: React.PropTypes.number,
+    stepValueContinuously: React.PropTypes.bool,
+    continuous: React.PropTypes.bool,
     lowerCenter: React.PropTypes.object, // CGPoint?
     upperCenter: React.PropTypes.object, // CGPoint?
     onChange: React.PropTypes.func,
+    disabled: React.PropTypes.bool,
+  },
+
+  componentDidMount() {
+    this.setState({...this.props});
+  },
+
+  componentWillReceiveProps(nextProps) {
+    this.setState(nextProps);
   },
 
   convertNativeEvent(event) {
@@ -37,6 +46,10 @@ const NMRangeSliderIOS = React.createClass({
     return (
       <NMRangeSlider
         {...this.props}
+        lowerValue={0}
+        upperValue={0}
+        disabled={false}
+        {...this.state}
         onChange={this._onChange}
       />
     )
