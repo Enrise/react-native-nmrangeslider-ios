@@ -1,8 +1,8 @@
-# Native Multi Slider for React Native iOS 
+# Native iOS multi slider component for React Native
 
-React Native Slider component with two markers based on [NMRangeSlider](https://github.com/mvelikov/NMRangeSlider).
+Native iOS multi slider component for React Native with two markers based on [NMRangeSlider](https://github.com/mvelikov/NMRangeSlider).
 
-[React-native-multi-slider](https://github.com/JackDanielsAndCode/react-native-multi-slider) 
+[react-native-multi-slider](https://github.com/JackDanielsAndCode/react-native-multi-slider) 
 works in javascript only which creates a noticeable lag when moving a 
 slider. Because NMRangeSlider is implemented as a native module there is no lag in this version.
 
