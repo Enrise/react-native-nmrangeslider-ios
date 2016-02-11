@@ -1,5 +1,7 @@
 # Native iOS multi slider component for React Native
 
+[![NPM](https://nodei.co/npm-dl/react-native-nmrangeslider-ios.png?months=3)](https://nodei.co/npm/react-native-nmrangeslider-ios/)
+
 Native iOS multi slider component for React Native with two markers based on [NMRangeSlider](https://github.com/mvelikov/NMRangeSlider).
 
 [react-native-multi-slider](https://github.com/JackDanielsAndCode/react-native-multi-slider) 
