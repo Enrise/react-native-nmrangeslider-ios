@@ -1,7 +1,6 @@
-import React, { Text } from 'react-native';
+import React, { Text, ColorPropType } from 'react-native';
 
 const requireNativeComponent =  require('react-native').requireNativeComponent;
-
 const NMRangeSliderIOS = React.createClass({
   propTypes: {
     minimumValue: React.PropTypes.number,
@@ -17,6 +16,7 @@ const NMRangeSliderIOS = React.createClass({
     lowerCenter: React.PropTypes.object, // CGPoint?
     upperCenter: React.PropTypes.object, // CGPoint?
     onChange: React.PropTypes.func,
+    trackColor: ColorPropType,
     disabled: React.PropTypes.bool,
   },
 

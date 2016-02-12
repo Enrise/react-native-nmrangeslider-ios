@@ -18,6 +18,7 @@
 		209129D51C64BEA2009926B8 /* slider-default7-trackBackground@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 209129601C64BA6F009926B8 /* slider-default7-trackBackground@2x.png */; };
 		209129D61C64BEA2009926B8 /* slider-default7-trackCrossedOver.png in Sources */ = {isa = PBXBuildFile; fileRef = 209129611C64BA6F009926B8 /* slider-default7-trackCrossedOver.png */; };
 		209129D71C64BEA2009926B8 /* slider-default7-trackCrossedOver@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 209129621C64BA6F009926B8 /* slider-default7-trackCrossedOver@2x.png */; };
+		20E7DA8B1C6E014600D8702A /* MMColorForTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E7DA8A1C6E014600D8702A /* MMColorForTrack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +49,8 @@
 		209129661C64BA6F009926B8 /* NMVerticalRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMVerticalRangeSlider.m; sourceTree = "<group>"; };
 		2091296D1C64BA96009926B8 /* NMRangeSliderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMRangeSliderManager.h; sourceTree = "<group>"; };
 		2091296E1C64BA96009926B8 /* NMRangeSliderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMRangeSliderManager.m; sourceTree = "<group>"; };
+		20E7DA891C6E014600D8702A /* MMColorForTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMColorForTrack.h; sourceTree = "<group>"; };
+		20E7DA8A1C6E014600D8702A /* MMColorForTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMColorForTrack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				209129641C64BA6F009926B8 /* NMRangeSlider.m */,
 				209129651C64BA6F009926B8 /* NMVerticalRangeSlider.h */,
 				209129661C64BA6F009926B8 /* NMVerticalRangeSlider.m */,
+				20E7DA891C6E014600D8702A /* MMColorForTrack.h */,
+				20E7DA8A1C6E014600D8702A /* MMColorForTrack.m */,
 			);
 			path = NMRangeSlider;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				209129D61C64BEA2009926B8 /* slider-default7-trackCrossedOver.png in Sources */,
 				209129D71C64BEA2009926B8 /* slider-default7-trackCrossedOver@2x.png in Sources */,
 				209129691C64BA6F009926B8 /* NMRangeSlider.m in Sources */,
+				20E7DA8B1C6E014600D8702A /* MMColorForTrack.m in Sources */,
 				2091296A1C64BA6F009926B8 /* NMVerticalRangeSlider.m in Sources */,
 				2091296F1C64BA96009926B8 /* NMRangeSliderManager.m in Sources */,
 			);

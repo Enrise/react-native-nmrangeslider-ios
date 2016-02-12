@@ -103,6 +103,6 @@
 
 -(void) beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event;
 -(void) continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event;
--(void) endTrackingWithTouch: (UITouch *)touch withEvent:(UIEvent *)event;
+-(void) endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event;
 
 @end

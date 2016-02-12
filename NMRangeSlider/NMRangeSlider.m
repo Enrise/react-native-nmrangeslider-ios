@@ -115,6 +115,14 @@ NSUInteger DeviceSystemMajorVersion() {
     }
 }
 
+- (void)setEnabled:(BOOL)enabled
+{
+    [super setEnabled:enabled];
+    
+    self.alpha = enabled ? 1.0 : 0.5;
+}
+
+
 // ------------------------------------------------------------------------------------------------------
 
 #pragma mark -
@@ -177,15 +185,15 @@ NSUInteger DeviceSystemMajorVersion() {
     
     __block void (^setValuesBlock)(void) = ^ {
         
-        if(!isnan(lowerValue))
-        {
-            [self setLowerValue:lowerValue];
-        }
         if(!isnan(upperValue))
         {
             [self setUpperValue:upperValue];
         }
-        
+        if(!isnan(lowerValue))
+        {
+          [self setLowerValue:lowerValue];
+        }
+
     };
     
     if(animated)
@@ -228,13 +236,6 @@ NSUInteger DeviceSystemMajorVersion() {
 {
     _upperHandleHidden = upperHandleHidden;
     [self setNeedsLayout];
-}
-
-- (void)setEnabled:(BOOL)enabled
-{
-    [super setEnabled:enabled];
-    
-    self.alpha = enabled ? 1.0 : 0.5;
 }
 
 //ON-Demand images. If the images are not set, then the default values are loaded.
@@ -719,7 +720,7 @@ NSUInteger DeviceSystemMajorVersion() {
     [self sendActionsForControlEvents:UIControlEventValueChanged];
     
     if ([_delegate respondsToSelector:@selector(endTrackingWithTouch:withEvent:)]) {
-      [_delegate endTrackingWithTouch:touch withEvent:event];
+        [_delegate endTrackingWithTouch:touch withEvent:event];
     }
 }
 
