@@ -20,9 +20,9 @@ npm install --save react-native-nmrangeslider-ios
 Follow the [procedure to link the library in XCode](https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking) 
 or run `rnpm link react-native-nmrangeslider-ios` using [rnpm](https://github.com/rnpm/rnpm).
 
-
-Then drag and drop the "DefaultTheme7" folder from `node_modules/react-native-nmrangeslider-ios/` to your
-XCode Resources folder. Select "copy files if necessary" and link them to your project. 
+Open your project in XCode if necessary and go into `Libraries > RNNMRangeSlider.xcodeproj > NMRangeSlider` and drag
+and drop the "Slider.xcassets" to the Resources folder. In the dialog, do NOT tick "copy files if necessary" because
+the files are already part of this project.
 
 # Usage example
 
@@ -32,12 +32,22 @@ import NMRangeSliderIOS from 'react-native-nmrangeslider-ios';
 <NMRangeSliderIOS
   minimumValue={0}
   maximumValue={99}
+  minimumRange={5}
   lowerValue={10}
   upperValue={80}
-  onChange={this.onChangeAge}
+  trackColor={#00ff00}
+  onChange={onChangeFunction}
+  disabled={false}
   style={{ width: 300, height: 50 }}
 />
 ```
+
+# Changelog
+
+- 1.3.0 Changed image assets into xcassets structure
+- 1.2.0 Add ability to set trackColor
+- 1.1.0 Add ability to disable control
+- 1.0.0 Initial release
 
 # License
 
