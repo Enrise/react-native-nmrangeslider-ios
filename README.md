@@ -23,6 +23,7 @@ or run `rnpm link react-native-nmrangeslider-ios` using [rnpm](https://github.co
 Open your project in XCode if necessary and go into `Libraries > RNNMRangeSlider.xcodeproj > NMRangeSlider` and drag
 and drop the "Slider.xcassets" to the Resources folder. In the dialog, do NOT tick "copy files if necessary" because
 the files are already part of this project.
+Note if you used this library before version 1.3.0, remove the "DefaultTheme7" folder you might have copied.
 
 # Usage example
 
