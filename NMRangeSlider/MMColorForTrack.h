@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface MMColorForTrack : NSObject
-+(UIImage*)getTrackImageWithColorR:(NSInteger)r G:(NSInteger)g B:(NSInteger)b A:(NSInteger)a;
++(UIImage*)getTrackImageWithColorR:(NSInteger)r G:(NSInteger)g B:(NSInteger)b A:(NSInteger)a Thickness:(float)thickness;
 @end

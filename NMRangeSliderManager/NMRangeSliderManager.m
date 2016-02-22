@@ -1,8 +1,8 @@
 #import "NMRangeSliderManager.h"
 #import "../NMRangeSlider/NMRangeSlider.h"
+#import "../NMRangeSlider/MMColorForTrack.h"
 #import "RCTEventDispatcher.h"
 #import "UIView+React.h"
-#import "../NMRangeSlider/MMColorForTrack.h"
 #import "RCTUtils.h"
 
 @interface NMRangeSliderManager() <NMRangeSliderDelegate>
@@ -25,14 +25,24 @@ RCT_EXPORT_VIEW_PROPERTY(upperValue, float);
 RCT_EXPORT_VIEW_PROPERTY(upperMinimumValue, float);
 RCT_EXPORT_VIEW_PROPERTY(lowerCenter, CGPoint);
 RCT_EXPORT_VIEW_PROPERTY(upperCenter, CGPoint);
+RCT_EXPORT_VIEW_PROPERTY(thickness, float);
 RCT_CUSTOM_VIEW_PROPERTY(trackColor, UIColor, NMRangeSlider)
 {
     if (json) {
         CGColorRef color = [RCTConvert UIColor:json].CGColor;
         const CGFloat *rgba = CGColorGetComponents(color);
-        view.trackImage = [MMColorForTrack getTrackImageWithColorR:rgba[0]*255 G:rgba[1]*255 B:rgba[2]*255 A:rgba[3]];
+        view.trackImage = [MMColorForTrack getTrackImageWithColorR:rgba[0]*255 G:rgba[1]*255 B:rgba[2]*255 A:rgba[3] Thickness: view.thickness];
     }
 }
+RCT_CUSTOM_VIEW_PROPERTY(trackColorBackground, UIColor, NMRangeSlider)
+{
+    if (json) {
+        CGColorRef color = [RCTConvert UIColor:json].CGColor;
+        const CGFloat *rgba = CGColorGetComponents(color);
+        view.trackBackgroundImage = [MMColorForTrack getTrackImageWithColorR:rgba[0]*255 G:rgba[1]*255 B:rgba[2]*255 A:rgba[3] Thickness: view.thickness];
+    }
+}
+
 
 RCT_CUSTOM_VIEW_PROPERTY(disabled, BOOL, NMRangeSlider)
 {
@@ -47,6 +57,7 @@ RCT_CUSTOM_VIEW_PROPERTY(disabled, BOOL, NMRangeSlider)
 {
   NMRangeSlider *slider = [[NMRangeSlider alloc] init]; // RCTMap
   slider.delegate = self;
+    
   return slider;
 }
 

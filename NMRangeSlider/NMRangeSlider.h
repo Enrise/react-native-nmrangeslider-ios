@@ -53,6 +53,9 @@
 // minimum value for right thumb
 @property(assign, nonatomic) float upperMinimumValue;
 
+// track height
+@property(assign, nonatomic) float thickness;
+
 @property (assign, nonatomic) UIEdgeInsets lowerTouchEdgeInsets;
 @property (assign, nonatomic) UIEdgeInsets upperTouchEdgeInsets;
 

@@ -9,14 +9,14 @@
 
 @implementation MMColorForTrack
 
-+(UIImage*)getTrackImageWithColorR:(NSInteger)r G:(NSInteger)g B:(NSInteger)b A:(NSInteger)a{
++(UIImage*)getTrackImageWithColorR:(NSInteger)r G:(NSInteger)g B:(NSInteger)b A:(NSInteger)a Thickness:(float)thickness{
 
 
 UIImage *newUIImage;
 
         
         int width = 3;
-        int height = 2;
+        int height = thickness;
         
         char* rgba = (char*)malloc(width*height*4);
         int offset=0;
