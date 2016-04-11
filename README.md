@@ -45,6 +45,7 @@ import NMRangeSliderIOS from 'react-native-nmrangeslider-ios';
 
 # Changelog
 
+- 1.3.1 CocoaPod support, #5
 - 1.3.0 Changed image assets into xcassets structure
 - 1.2.0 Add ability to set trackColor
 - 1.1.0 Add ability to disable control
