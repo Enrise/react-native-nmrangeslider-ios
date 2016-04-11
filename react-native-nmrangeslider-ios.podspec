@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "react-native-nmrangeslider-ios"
-  s.version          = "1.3.0"
+  s.version          = "1.3.1"
   s.summary          = "Native iOS multi slider component for React Native with two markers based on https://github.com/Enrise/NMRangeSlider."
   s.homepage         = "https://github.com/Enrise/react-native-nmrangeslider-ios"
   s.license          = "MIT"
