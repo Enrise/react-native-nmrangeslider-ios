@@ -25,13 +25,13 @@ RCT_EXPORT_VIEW_PROPERTY(upperValue, float);
 RCT_EXPORT_VIEW_PROPERTY(upperMinimumValue, float);
 RCT_EXPORT_VIEW_PROPERTY(lowerCenter, CGPoint);
 RCT_EXPORT_VIEW_PROPERTY(upperCenter, CGPoint);
-RCT_EXPORT_VIEW_PROPERTY(thickness, float);
+RCT_EXPORT_VIEW_PROPERTY(trackThickness, int);
 RCT_CUSTOM_VIEW_PROPERTY(trackColor, UIColor, NMRangeSlider)
 {
     if (json) {
         CGColorRef color = [RCTConvert UIColor:json].CGColor;
         const CGFloat *rgba = CGColorGetComponents(color);
-        view.trackImage = [MMColorForTrack getTrackImageWithColorR:rgba[0]*255 G:rgba[1]*255 B:rgba[2]*255 A:rgba[3] Thickness: view.thickness];
+        view.trackImage = [MMColorForTrack getTrackImageWithColorR:rgba[0]*255 G:rgba[1]*255 B:rgba[2]*255 A:rgba[3] Thickness: view.trackThickness];
     }
 }
 RCT_CUSTOM_VIEW_PROPERTY(trackColorBackground, UIColor, NMRangeSlider)
@@ -39,7 +39,7 @@ RCT_CUSTOM_VIEW_PROPERTY(trackColorBackground, UIColor, NMRangeSlider)
     if (json) {
         CGColorRef color = [RCTConvert UIColor:json].CGColor;
         const CGFloat *rgba = CGColorGetComponents(color);
-        view.trackBackgroundImage = [MMColorForTrack getTrackImageWithColorR:rgba[0]*255 G:rgba[1]*255 B:rgba[2]*255 A:rgba[3] Thickness: view.thickness];
+        view.trackBackgroundImage = [MMColorForTrack getTrackImageWithColorR:rgba[0]*255 G:rgba[1]*255 B:rgba[2]*255 A:rgba[3] Thickness: view.trackThickness];
     }
 }
 

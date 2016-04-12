@@ -16,17 +16,17 @@ const NMRangeSliderIOS = React.createClass({
     lowerCenter: React.PropTypes.object, // CGPoint?
     upperCenter: React.PropTypes.object, // CGPoint?
     onChange: React.PropTypes.func,
-    thickness: React.PropTypes.number,
     trackColor: ColorPropType,
     trackColorBackground: ColorPropType,
+    trackThickness: React.PropTypes.number,
     disabled: React.PropTypes.bool,
   },
 
   getDefaultProps() {
     return {
-      thickness: 2,
       trackColor: '#4A90E2',
       trackColorBackground: '#AAAAAA',
+      trackThickness: 2,
     }
   },
 

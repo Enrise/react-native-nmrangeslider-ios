@@ -1,96 +1,47 @@
 {
-  "_args": [
-    [
-      "react-native-nmrangeslider-ios",
-      "/Users/jarredwitt/Desktop/Development/Mobile/merit_hearth_react_native"
-    ]
+  "name": "react-native-nmrangeslider-ios",
+  "version": "1.3.1",
+  "description": "Native iOS multi slider component for React Native with two markers based on https://github.com/Enrise/NMRangeSlider.",
+  "main": "NMRangeSliderIOS.js",
+  "bin": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "mobile",
+    "ios",
+    "ui",
+    "slider",
+    "multi",
+    "icons",
+    "native",
+    "retina"
   ],
-  "_from": "react-native-nmrangeslider-ios@*",
-  "_id": "react-native-nmrangeslider-ios@1.3.0",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/react-native-nmrangeslider-ios",
-  "_nodeVersion": "4.2.2",
-  "_npmOperationalInternal": {
-    "host": "packages-9-west.internal.npmjs.com",
-    "tmp": "tmp/react-native-nmrangeslider-ios-1.3.0.tgz_1455531342715_0.4821831763256341"
-  },
-  "_npmUser": {
-    "email": "npm@enrise.com",
-    "name": "enrise"
-  },
-  "_npmVersion": "2.14.7",
-  "_phantomChildren": {},
-  "_requested": {
-    "name": "react-native-nmrangeslider-ios",
-    "raw": "react-native-nmrangeslider-ios",
-    "rawSpec": "",
-    "scope": null,
-    "spec": "*",
-    "type": "range"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/react-native-nmrangeslider-ios/-/react-native-nmrangeslider-ios-1.3.0.tgz",
-  "_shasum": "d042829e3ee2632e93f3d868e84a7775eb49aae5",
-  "_shrinkwrap": null,
-  "_spec": "react-native-nmrangeslider-ios",
-  "_where": "/Users/jarredwitt/Desktop/Development/Mobile/merit_hearth_react_native",
   "author": {
-    "email": "npm@enrise.com",
-    "name": "Enrise BV"
+    "name": "Enrise BV",
+    "email": "npm@enrise.com"
   },
-  "bin": {},
+  "homepage": "https://github.com/Enrise/react-native-nmrangeslider-ios",
   "bugs": {
     "url": "https://github.com/Enrise/react-native-nmrangeslider-ios/issues"
   },
-  "dependencies": {},
-  "description": "Native iOS multi slider component for React Native with two markers based on https://github.com/Enrise/NMRangeSlider.",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "d042829e3ee2632e93f3d868e84a7775eb49aae5",
-    "tarball": "http://registry.npmjs.org/react-native-nmrangeslider-ios/-/react-native-nmrangeslider-ios-1.3.0.tgz"
-  },
-  "gitHead": "22ba052c0d38b285ceec46662ba8724501de8564",
-  "homepage": "https://github.com/Enrise/react-native-nmrangeslider-ios",
-  "keywords": [
-    "icons",
-    "ios",
-    "mobile",
-    "multi",
-    "native",
-    "react",
-    "react-component",
-    "react-native",
-    "react-native-component",
-    "retina",
-    "slider",
-    "ui"
-  ],
-  "license": "MIT",
-  "main": "NMRangeSliderIOS.js",
-  "maintainers": [
-    {
-      "name": "enrise",
-      "email": "npm@enrise.com"
-    }
-  ],
-  "name": "react-native-nmrangeslider-ios",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git://github.com/Enrise/react-native-nmrangeslider-ios.git"
   },
+  "license": "MIT",
   "rnpm": {
     "assets": [
       "NMRangeSlider/Slider.xcassets"
     ]
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
   },
-  "version": "1.3.0"
+  "devDependencies": {
+  }
 }

@@ -9,15 +9,15 @@
 
 @implementation MMColorForTrack
 
-+(UIImage*)getTrackImageWithColorR:(NSInteger)r G:(NSInteger)g B:(NSInteger)b A:(NSInteger)a Thickness:(float)thickness{
++(UIImage*)getTrackImageWithColorR:(NSInteger)r G:(NSInteger)g B:(NSInteger)b A:(NSInteger)a Thickness:(int)thickness{
 
 
 UIImage *newUIImage;
 
-        
+
         int width = 3;
         int height = thickness;
-        
+
         char* rgba = (char*)malloc(width*height*4);
         int offset=0;
         for(int i=0; i < height; ++i)
@@ -31,8 +31,8 @@ UIImage *newUIImage;
                 offset ++;
             }
         }
-        
-        
+
+
         CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
         CGContextRef bitmapContext = CGBitmapContextCreate(
                                                            rgba,
@@ -42,18 +42,18 @@ UIImage *newUIImage;
                                                            4*width, // bytesPerRow
                                                            colorSpace,
                                                            kCGImageAlphaNoneSkipLast | kCGBitmapByteOrder32Big);
-        
+
         CFRelease(colorSpace);
-        
+
         CGImageRef cgImage = CGBitmapContextCreateImage(bitmapContext);
-        
+
         free(rgba);
-        
+
         newUIImage = [UIImage imageWithCGImage:cgImage];
 
-    
+
     return newUIImage;
-    
-    
+
+
 };
 @end

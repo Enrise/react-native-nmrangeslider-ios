@@ -231,39 +231,6 @@
     return image;
 }
 
-/*- (UIImage *)trackBackgroundImage
-{
-    if(_trackBackgroundImage==nil)
-    {
-        
-    }
-    
-    return _trackBackgroundImage;
-}
-
-- (UIImage *)trackImage
-{
-    if(_trackImage==nil)
-    {
-        
-    }
-    
-    return _trackImage;
-}*/
-
-
-- (UIImage *)trackCrossedOverImage
-{
-    if(_trackCrossedOverImage==nil)
-    {
-        UIImage *image = [self imageFromBundle:@"slider-default7-trackCrossedOver"];
-        image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(0.0, 2.0, 0.0, 2.0)];
-        _trackCrossedOverImage = image;
-    }
-    
-    return _trackCrossedOverImage;
-}
-
 - (UIImage *)lowerHandleImageNormal
 {
     if(_lowerHandleImageNormal==nil)
@@ -494,7 +461,7 @@
 
     self.trackBackground.frame = [self trackBackgroundRect];
     self.trackBackground.image = self.trackBackgroundImage;
-    self.trackBackground.layer.cornerRadius = self.thickness/2;
+    self.trackBackground.layer.cornerRadius = self.trackThickness/2;
     self.trackBackground.clipsToBounds = YES;
     self.track.frame = [self trackRect];
     self.track.image = [self trackImageForCurrentValues];
