@@ -1,0 +1,47 @@
+{
+  "name": "react-native-nmrangeslider-ios",
+  "version": "1.3.0",
+  "description": "Native iOS multi slider component for React Native with two markers based on https://github.com/Enrise/NMRangeSlider.",
+  "main": "NMRangeSliderIOS.js",
+  "bin": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "mobile",
+    "ios",
+    "ui",
+    "slider",
+    "multi",
+    "icons",
+    "native",
+    "retina"
+  ],
+  "author": {
+    "name": "Enrise BV",
+    "email": "npm@enrise.com"
+  },
+  "homepage": "https://github.com/Enrise/react-native-nmrangeslider-ios",
+  "bugs": {
+    "url": "https://github.com/Enrise/react-native-nmrangeslider-ios/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Enrise/react-native-nmrangeslider-ios.git"
+  },
+  "license": "MIT",
+  "rnpm": {
+    "assets": [
+      "NMRangeSlider/Slider.xcassets"
+    ]
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
