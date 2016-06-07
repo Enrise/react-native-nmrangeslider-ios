@@ -1,4 +1,5 @@
-import React, { Text, ColorPropType } from 'react-native';
+import React from 'react';
+import { Text, ColorPropType } from 'react-native';
 
 const requireNativeComponent =  require('react-native').requireNativeComponent;
 const NMRangeSliderIOS = React.createClass({
