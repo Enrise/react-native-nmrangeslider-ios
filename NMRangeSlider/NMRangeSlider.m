@@ -231,13 +231,11 @@
     return image;
 }
 
-- (UIImage *)trackBackgroundImage
+/*- (UIImage *)trackBackgroundImage
 {
     if(_trackBackgroundImage==nil)
     {
-        UIImage *image = [self imageFromBundle:@"slider-default7-trackBackground"];
-        image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(0.0, 2.0, 0.0, 2.0)];
-        _trackBackgroundImage = image;
+        
     }
     
     return _trackBackgroundImage;
@@ -247,14 +245,11 @@
 {
     if(_trackImage==nil)
     {
-        UIImage* image = [self imageFromBundle:@"slider-default7-track"];
-        image = [image resizableImageWithCapInsets:UIEdgeInsetsMake(0.0, 2.0, 0.0, 2.0)];
-        image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-        _trackImage = image;
+        
     }
     
     return _trackImage;
-}
+}*/
 
 
 - (UIImage *)trackCrossedOverImage
@@ -415,10 +410,7 @@
         trackBackgroundRect.size.height=self.bounds.size.height;
     }
     
-    if(_trackBackgroundImage.capInsets.left || _trackBackgroundImage.capInsets.right)
-    {
-        trackBackgroundRect.size.width=self.bounds.size.width;
-    }
+    trackBackgroundRect.size.width=self.bounds.size.width;
     
     trackBackgroundRect.origin = CGPointMake(0, (self.bounds.size.height/2.0f) - (trackBackgroundRect.size.height/2.0f));
     
@@ -501,6 +493,9 @@
     }
 
     self.trackBackground.frame = [self trackBackgroundRect];
+    self.trackBackground.image = self.trackBackgroundImage;
+    self.trackBackground.layer.cornerRadius = self.thickness/2;
+    self.trackBackground.clipsToBounds = YES;
     self.track.frame = [self trackRect];
     self.track.image = [self trackImageForCurrentValues];
 
