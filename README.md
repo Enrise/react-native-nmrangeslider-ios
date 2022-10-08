@@ -1,3 +1,9 @@
+# Archived and unmaintained
+
+This is an old repository that is no longer used or maintained. We advice to no longer use this repository.
+
+## Original README can be found below:
+
 # Native iOS multi slider component for React Native
 
 [![NPM](https://nodei.co/npm-dl/react-native-nmrangeslider-ios.png?months=3)](https://nodei.co/npm/react-native-nmrangeslider-ios/)
